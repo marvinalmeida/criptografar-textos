@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --cor-primaria:#40A2E3;
+    --cor-secundaria:#0D9276;
+    --cor-terciaria:#BBE2EC;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
    
 }
 body{
-    background-color: #e4f1f8;
+    background-color: var(--cor-primaria);
 }
 
-
 .container{
+    padding: 2% 15%;
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
-    margin: 2rem auto;
+    margin: 2rem;
     
 }
 
@@ -27,18 +35,58 @@ justify-content: space-between;
    
 }
 
+.svg-textarea{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: regular;
+}
+
 .texto{
     display: flex;
-    flex-wrap: wrap;
-    background-color: #e4f1f8;
+    
+    background-color:var(--cor-primaria);
     color: #0A3871;
-    font-size: 32px;
+    font-size: 2rem;
     text-transform: capitalize;
     font-weight: bold;
+    resize: none;
     border: none;
     width: 400px;
-    height: 288px;
+    height: 588px;
+
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
    
+}
+
+.buttons{
+    margin: 10px 0;
+}
+
+.criptografar{
+    border: none;
+    border-radius: 24px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--cor-secundaria);
+
+    cursor: pointer;
+}
+
+.descriptografar{
+    margin-left: 10px;
+    border: none;
+    border-radius: 24px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--cor-terciaria);
+
+    cursor: pointer;
 }
 
 .shadow{
@@ -57,7 +105,10 @@ justify-content: space-between;
    width: 336px;
   
 }
-footer{
+.rodape{
+    padding: 24px;
+    text-align: center;
+    text-transform: capitalize;
     background-color: black;
     color: white;
     max-width: 100%;
