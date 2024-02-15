@@ -14,24 +14,25 @@
    
 }
 body{
+   
     background-color: var(--cor-primaria);
 }
 
 .container{
-    padding: 2% 15%;
+    padding: 5% 15%;
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    
+    gap: 80px;  
 }
 
-.logo {
-display: flex;
-justify-content: space-between;
+.container__conteudo{
+    display: flex;
+
 }
+
 
 .texto-regra{
-    margin: 100px 0;
+    margin: 80px;
    
 }
 
@@ -55,7 +56,7 @@ justify-content: space-between;
     font-weight: bold;
     resize: none;
     border: none;
-    width: 400px;
+    width: 680px;
     height: 588px;
 
     box-shadow: 0 0 0 0;
@@ -65,14 +66,15 @@ justify-content: space-between;
 }
 
 .buttons{
+    display: flex;
     margin: 10px 0;
 }
 
 .criptografar{
     border: none;
     border-radius: 24px;
-    width: 200px;
-    height: 50px;
+    width: 328px;
+    height: 67px;
     background-color: var(--cor-secundaria);
 
     cursor: pointer;
@@ -82,8 +84,8 @@ justify-content: space-between;
     margin-left: 10px;
     border: none;
     border-radius: 24px;
-    width: 200px;
-    height: 50px;
+    width: 328px;
+    height: 67px;
     background-color: var(--cor-terciaria);
 
     cursor: pointer;
@@ -99,6 +101,7 @@ justify-content: space-between;
     border-radius: 32px;
     height: 800px;
 	width: 400px;  
+    
 }
 .svg-campo-branco{
    max-width: 100%;
@@ -113,3 +116,14 @@ justify-content: space-between;
     color: white;
     max-width: 100%;
 }
+
+/* @media (max-width: 1330px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    header{
+        padding: 2% 0% 0% 15%;
+    }
+} */
