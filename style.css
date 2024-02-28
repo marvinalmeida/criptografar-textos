@@ -19,20 +19,24 @@ body{
 }
 
 .container{
-    padding: 5% 15%;
+    max-width: 1440px;  
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    gap: 80px;  
+    
+    
 }
 
-.container__conteudo{
-    display: flex;
 
+
+.container__conteudo{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 
 .texto-regra{
-    margin: 80px;
+ margin: 80px;
    
 }
 
