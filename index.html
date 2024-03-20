@@ -57,7 +57,7 @@
           </div>
 
           <div class="buttons">
-            <button onclick="criptografar()" class="criptografar">
+            <button onclick="criptografarTexto()" class="criptografar">
               criptografar
             </button>
             <button onclick="descriptografar()" class="descriptografar">
@@ -65,7 +65,7 @@
             </button>
           </div>
         </div>
-        <div class="shadow">
+        <div class="shadow" id="resultado">
           <svg
             class="remove-area"
             class="svg-campo-branco"
@@ -611,8 +611,8 @@
             </defs>
           </svg>
   
-          <p class="remove-area">nenhuma mensagem encontrada</p>
-          <p class="remove-area">
+          <p>nenhuma mensagem encontrada</p>
+          <p>
             Digite um texto que você deseja criptografar ou descriptografar.
           </p>
         </div>
